@@ -19,7 +19,7 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def help
+  def photo
     # Initialize the API
     client = Google::APIClient.new(:application_name => APPLICATION_NAME)
     client.authorization = authorize

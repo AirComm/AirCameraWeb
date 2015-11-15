@@ -5,8 +5,8 @@
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Photo", help_path %></li>
-          <li><%= link_to "Movie", help_path %></li>
+          <li><%= link_to "Photo", photo_path %></li>
+          <li><%= link_to "Movie", photo_path %></li>
           <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">
