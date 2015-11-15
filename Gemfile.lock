@@ -153,6 +153,8 @@ GEM
     rake (10.4.2)
     rdoc (3.12.2)
       json (~> 1.4)
+    rename (1.0.2)
+      rails (>= 3.0.0)
     retriable (1.4.1)
     rmagick (2.15.4)
     rspec-core (2.13.1)
@@ -236,6 +238,7 @@ DEPENDENCIES
   pry-byebug
   rails (= 4.0.5)
   rails_12factor (= 0.0.2)
+  rename
   rmagick
   rspec-rails (= 2.13.1)
   sass-rails (= 4.0.5)

@@ -14,6 +14,7 @@ gem 'mini_magick', '3.8.0'
 gem "rmagick"
 gem 'google-api-client'
 gem 'pry-byebug', group: :development
+gem 'rename'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
