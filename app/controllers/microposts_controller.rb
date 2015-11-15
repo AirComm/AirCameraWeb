@@ -13,6 +13,17 @@ class MicropostsController < ApplicationController
     end
   end
 
+  def upload
+    @micropost = current_user.microposts.build(micropost_params)
+    if @micropost.save
+      flash[:success] = "image uploaded!"
+      redirect_to root_url
+    else
+      @feed_items = []
+      render 'static_pages/home'
+    end
+  end
+
   def destroy
     @micropost.destroy
     redirect_to root_url
@@ -22,6 +33,10 @@ class MicropostsController < ApplicationController
 
     def micropost_params
       params.require(:micropost).permit(:content)
+    end
+
+    def upload_params
+      params.require(:micropost).permit(:image)
     end
 
     def correct_user

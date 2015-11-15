@@ -1,8 +1,13 @@
-<% provide(:title, 'Help') %>
-<h1>Help</h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://railstutorial.jp/help">Rails Tutorial help page</a>.
-  To get help on this sample app, see the
-  <a href="http://railstutorial.jp/book">Rails Tutorial book</a>.
-</p>
+<% provide(:title, 'Photo') %>
+<% if signed_in? %>
+  <p>
+    <% @picture_title.each do |p_title| %>
+    <img src=<%= p_title %> width=300, height=300>
+    <% end %>
+  </p>
+<% else %>
+  <h1>Photo</h1>
+  <p>
+    air camera photo.
+  </p>
+<% end %>
