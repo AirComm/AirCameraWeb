@@ -67,13 +67,15 @@ p {
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
+  /* margin-right: 10px; */
+  font-size: 2.2em;
+  font-family: cursive;
+  font-style: italic;
   color: white;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: -1px;
   padding-top: 9px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1;
   &:hover {
     color: white;
